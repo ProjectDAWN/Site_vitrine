@@ -1,0 +1,7 @@
+dp_showcase:
+    resource: "@DPShowcaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

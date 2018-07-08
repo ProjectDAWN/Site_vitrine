@@ -1,0 +1,3 @@
+dp_showcase_homepage:
+    path:     /
+    defaults: { _controller: DPShowcaseBundle:Default:index }
