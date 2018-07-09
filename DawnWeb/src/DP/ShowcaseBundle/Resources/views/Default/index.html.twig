@@ -9,6 +9,11 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -142,7 +147,7 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+      color: #00e6ac;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -316,6 +321,28 @@
   margin-top: 0;
 }
 
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #00e6ac;
+}
 
 @media (min-width: 992px) {
   .timeline > li {
@@ -434,7 +461,7 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>About DAWN</h2><br>
+      <h2>A propos de Dawn</h2><br>
       <h4>Dawn Project est un projet entrepreneurial visant à offrir aux citadins les outils de transformation de leur consommation alimentaire. En effet, grâce à l’offre servicielle que nous développons les Dawners (membres de notre communauté) pourrons devenir de vrais fermiers citadins en redevenant acteurs de leur production. </h4><br>
       <p>Nous proposons un abonnement mensuel complet délivrant une performance globale: la location d’une serre intelligente autonome, la mise à disposition d’un réseau de fermiers citadins s’échangeant leur surplus de récolte pour compléter leur panier de F&L ainsi que l’accès à une ferme centrale urbaine où dénicher des F&L rares et des espèces anciennes.</p>
     </div>
@@ -501,9 +528,9 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
 </div>
 
 <!-- Container (Portfolio Section) -->
-
+<div id="portfolio" class="container-fluid text-center">
   <!-- Team -->
-    <section class="bg-light" id="team">
+    <section class="bg-grey " id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -529,7 +556,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/daniel-bodenheimer-5b8000147">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -553,7 +580,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://fr.linkedin.com/in/léo-bertau-50b897152">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -577,7 +604,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/antoine-pinaud-a3b417163/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -587,11 +614,12 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <p class="large text-muted">Rejoignez l'équipe !</p>
           </div>
         </div>
       </div>
     </section>
+</div>
 
   <!-- About -->
     <section id="about">
@@ -657,7 +685,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
                     <h4 class="subheading">Phase Two Expansion</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">Rejoignez l'équipe !</p>
                   </div>
                 </div>
               </li>
@@ -674,7 +702,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
       </div>
     </section>
 
-  <h2>Ils nous font confiance</h2>
+  <h3 class="text-center">Ils nous font confiance</h3>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -686,13 +714,13 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        <h4>"Ça va cartonner !"<br><span>Daniel Bodenheimer, CEO</span></h4>
       </div>
       <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        <h4>"One word... WOW!!"<br><span>Léo Bertau, Co-Founder R&D</span></h4>
       </div>
       <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        <h4>"Could I... BE any more happy with this company?"<br><span>Antoine Pinaud, CTO</span></h4>
       </div>
     </div>
 
@@ -709,74 +737,16 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
 </div>
 
 <!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
+<div id="pricing" class="container-fluid bg-grey">
   <div class="text-center">
     <h2>Pricing</h2>
     <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
+
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
