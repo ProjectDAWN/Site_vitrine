@@ -321,6 +321,26 @@
   margin-top: 0;
 }
 
+.part-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.part-member img {
+  width: 225px;
+  height: 225px;
+}
+
+.part-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+.part-member p {
+  margin-top: 0;
+}
+
 ul.social-buttons {
   margin-bottom: 0;
 }
@@ -440,7 +460,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
         <li><a href="#about">PROJECT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#portfolio">OUR TEAM</a></li>
-        <li><a href="#pricing">ABOUT</a></li>
+        <li><a href="#pricing">PARTNERS</a></li>
         <li><a href="#contact">CONTACT US</a></li>
       </ul>
     </div>
@@ -453,6 +473,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   <form>
     <div class="input-group-btn">
       <a href="#about" class="btn btn-basic" role="button">Tell me more</a>
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/company/dawnproject/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </form>
 </div>
@@ -466,7 +493,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
       <p>Nous proposons un abonnement mensuel complet délivrant une performance globale: la location d’une serre intelligente autonome, la mise à disposition d’un réseau de fermiers citadins s’échangeant leur surplus de récolte pour compléter leur panier de F&L ainsi que l’accès à une ferme centrale urbaine où dénicher des F&L rares et des espèces anciennes.</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo"></span>
+      <span class="glyphicon glyphicon-leaf logo slideanim"></span>
+
+
     </div>
   </div>
 </div>
@@ -475,6 +504,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
+
     </div>
     <div class="col-sm-8">
       <h2>Notre Vision</h2><br>
@@ -492,37 +522,20 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4></h4>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4></h4>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4></h4>
-      <p></p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4></h4>
-      <p></p>
+      <h4>La Box</h4>
+      <p class="text-muted">Micro serre connectée régulant l'environnement de pousse des fruits et légumes, dotée d'un système intelligent qui optimise les paramètres de pousse.</p>
+      <img class="img-circle img-fluid" src="{{ asset('images/Prototype.png') }}" alt="Box" width="200" height="200">
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4></h4>
-      <p></p>
+      <span class="glyphicon glyphicon-shopping-cart logo-small"></span>
+      <h4>Les consommables</h4>
+      <p class="text-muted">Kit de recharge en graines et nutriments permettant le bon fonctionnement de la box. Ils fournissent les apports nécessaires aux fruits et légumes.</p>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;"></h4>
-      <p></p>
+      <span class="glyphicon glyphicon-phone logo-small"></span>
+      <h4>L'application communautaire</h4>
+      <p class="text-muted">Application sociale connectant tous les utilisateurs afin qu'ils puissent échanger leurs surplus de production.</p>
     </div>
   </div>
 </div>
@@ -541,7 +554,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto img-circle" src="http://localhost:8888/DawnWeb/web/Daniel.png" alt="">
+              <img class="mx-auto img-circle" src="{{ asset('images/Daniel.png') }}" alt="">
               <h4>Daniel Bodenheimer</h4>
               <p class="text-muted">Co-Founder, CEO</p>
               <ul class="list-inline social-buttons">
@@ -565,7 +578,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto img-circle" src="http://localhost:8888/DawnWeb/web/Leo.png" alt="">
+              <img class="mx-auto img-circle" src="{{ asset('images/Leo.png') }}" alt="">
               <h4>Léo Bertau</h4>
               <p class="text-muted">Co-Founder, R&D </p>
               <ul class="list-inline social-buttons">
@@ -589,7 +602,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto img-circle" src="http://localhost:8888/DawnWeb/web/Pinaud.png" alt="">
+              <img class="mx-auto img-circle" src="{{ asset('images/Pinaud2.png') }}" alt="">
               <h4>Antoine Pinaud</h4>
               <p class="text-muted">CTO</p>
               <ul class="list-inline social-buttons">
@@ -614,7 +627,6 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Rejoignez l'équipe !</p>
           </div>
         </div>
       </div>
@@ -635,26 +647,26 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
             <ul class="timeline">
               <li>
                 <div class="timeline-image">
-                  <img class="img-circle img-fluid" src="http://localhost:8888/DawnWeb/web/Prototype.png" alt="Box" width="136" height="136">
+                  <img class="img-circle img-fluid" src="{{ asset('images/Hackathon-1.png') }}" alt="Box" width="155" height="155">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
+                    <h4>Février 2018</h4>
+                    <h4 class="subheading">Hackathon Crédit-Agricole</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    <p class="text-muted">First Price at the Start’up Challenge of Saint-Étienne organized by Crédit Agricole and EM-Lyon. We were lucky to win 4000€ and 3 coaching classes with the CEO & Chairman of the French company Sam Outillage and his whole executive team.</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="img-circle img-fluid" src="http://localhost:8888/DawnWeb/web/Prototype2.png" alt="Box" width="136" height="136">
+                  <img class="img-circle img-fluid" src="{{ asset('images/Prototype.png') }}" alt="Box" width="155" height="155">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
+                    <h4>Juillet 2018</h4>
+                    <h4 class="subheading">Prototype Box</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -663,12 +675,12 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
               </li>
               <li>
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                  <img class="img-circle img-fluid" src="{{ asset('images/Hackathon-3.jpeg') }}" alt="" width="155" height="155">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
+                    <h4>Juillet 2018</h4>
+                    <h4 class="subheading">Hackathon Start'in Challenge</h4>
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -677,23 +689,21 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+                  <img class="img-circle img-fluid" src="{{ asset('images/Incubation.png') }}" alt="" width="155" height="155">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
+                    <h4>2018-2019</h4>
+                    <h4 class="subheading">Incubation Use'In</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Rejoignez l'équipe !</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Rejoignez
-                    <br>nous
-                    <br>!</h4>
+                  <img class="img-circle img-fluid" src="{{ asset('images/logo.png') }}" alt="" width="155" height="155">
+
                 </div>
               </li>
             </ul>
@@ -702,7 +712,7 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
       </div>
     </section>
 
-  <h3 class="text-center">Ils nous font confiance</h3>
+  <h3 class="text-center">Rejoignez nous !</h3>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -739,9 +749,61 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
 <!-- Container (Pricing Section) -->
 <div id="pricing" class="container-fluid bg-grey">
   <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
+    <h2>Partenaires</h2>
+    <h4>Ils nous ont fait confiance et nous accompagnent!</h4>
+    <section class="bg-grey " id="team">
+      <div class="container">
+        <div class="row">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="part-member">
+              <img class="mx-auto" alt="" src="{{ asset('images/Logo_emse-2.png') }}">
+              <h4>Mines Saint-Etienne</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="part-member">
+              <img class="mx-auto" alt="" src="{{ asset('images/UseIn2.png') }}">
+              <h4>Use'In</h4>
 
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="part-member">
+              <img class="mx-auto" alt="" src="{{ asset('images/SAM2.png') }}">
+              <h4>Sam Outillage</h4>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="part-member">
+                <img class="mx-auto" alt="" src="{{ asset('images/Credit-Agricole.png') }}">
+                <h4>Crédit Agricole</h4>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="part-member">
+                <img class="mx-auto " alt="" src="{{ asset('images/SE.png') }}">
+                <h4>Saint-Etienne Métropole</h4>
+
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="part-member">
+                <img class="mx-auto" alt="" src="{{ asset('images/ARA.png') }}">
+                <h4>La région Auvergne-Rhone-Alpes</h4>
+
+              </div>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+    </section>
+</div>
   </div>
 </div>
 
@@ -777,7 +839,15 @@ En relocalisant la production de Fruits et Légumes dans les villes et en s’or
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
+    </a>
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/company/dawnproject/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+
 </footer>
 
 <script>
